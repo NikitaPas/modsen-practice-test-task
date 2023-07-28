@@ -1,15 +1,16 @@
 import React from "react";
-import "./styleBooks.css"
+import '../Books/styleBooks.css'
 
 interface SelectCategoryProps {
     categories: string[];
     onChange: (category: string) => void;
+    value?: string;
   }
   
-  export default function SelectCategory({ categories, onChange }: SelectCategoryProps) {
+  export default function SelectCategory({ categories, onChange, value,}: SelectCategoryProps) {
     return (
       <div className="selectCategory">
-      <select onChange={(event) => onChange(event.target.value)}>
+      <select value={value} onChange={(event) => onChange(event.target.value)}>
         <option value="all">All categories</option>
           <option value="art">Art</option>
           <option value="biography">Biography</option>

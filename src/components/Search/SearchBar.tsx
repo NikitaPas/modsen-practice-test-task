@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import React from "react";
-import "./styleBooks.css"
+import '../Books/styleBooks.css'
 
 interface SearchBarProps {
   onSearch: (query: string) => void;

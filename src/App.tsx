@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import axios from 'axios'
-import SearchBar from './components/Books/SearchBar';
-import SelectCategory from './components/Books/SelectCategory';
+import SearchBar from './components/Search/SearchBar';
+import SelectCategory from './components/Search/SelectCategory';
 import BookList from './components/Books/BookList';
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import BookDetail from './components/Books/BookDetail';
-import SelectRelevance from './components/Books/SelectRelevance';
+import SelectRelevance from './components/Search/SelectRelevance';
 
 export default function App() {
   const [books, setBooks] = useState<Book[]>([]);

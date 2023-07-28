@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-left: 100px;
 }
 
 .card{
@@ -11,10 +12,17 @@
     border: 2px solid;
     align-items: center;
     padding-left: 20px;
+    transition: 0.4s;
 }
 
 .card-body{
 padding-left: 20px;
+}
+
+.card:hover{
+    background-color: grey;
+    transform: scale(1.1);
+    color:aliceblue;
 }
 
 .card-img-top{
@@ -31,4 +39,26 @@ padding-left: 20px;
 .selectCategory{
     text-align: center;
     padding-bottom: 30px;
+}
+
+.booksDetails{
+    text-align: center;
+    margin: 50px 100px 50px 100px;
+}
+
+.title_book{
+    font-size: 64px;
+}
+
+.author_details{
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.category_details{
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 20px;
 }
